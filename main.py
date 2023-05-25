@@ -35,6 +35,7 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 
 
+from datetime import time, datetime
 
 st.header('st.slider')
 
@@ -42,7 +43,7 @@ st.header('st.slider')
 
 st.subheader('Slider')
 
-age = st.slider('How old are you?', 0, 130, 25)
+age = st.slider('How old are you?', 0, 130, 25) # start, end, default starting position
 st.write("I'm ", age, 'years old')
 
 # Example 2
